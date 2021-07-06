@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/new', (req, res) => {
-  res.send('This is a different path.')
+  res.send('This is a different path.' + 2 + 3)
 })
 
 app.listen(8080, () => {
