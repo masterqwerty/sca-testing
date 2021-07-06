@@ -1,13 +1,12 @@
 const express = require('express')
-const app = express()
+const app = express()asdf
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
 app.get('/new', (req, res) => {
-  let something = "something"
-  res.send('This is a different path.' something)
+  res.send('This is a different path.')
 })
 
 app.listen(8080, () => {
