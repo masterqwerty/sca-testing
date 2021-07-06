@@ -12,6 +12,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "jest-sonar-reporter": "^2.0.0"
   }
 }
