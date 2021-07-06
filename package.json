@@ -14,5 +14,8 @@
   "devDependencies": {
     "jest": "^27.0.6",
     "jest-sonar-reporter": "^2.0.0"
+  },
+  "jest": {
+    "testResultsProcessor": "jest-sonar-reporter"
   }
 }
