@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/path', (req, res) => {
+app.get('/new-path', (req, res) => {
   res.send('This is a different path.')
 })
 
