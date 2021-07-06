@@ -1,3 +1,8 @@
-window.addEventListener('popstate', (e) => {
-  console.log('Doing something here!')
-})
+module.exports = {
+  sum: (a, b) => {
+    return a + b
+  },
+  addThing: () => {
+    window.addEventListener('popstate', () => {})
+  }
+}

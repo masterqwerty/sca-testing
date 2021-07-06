@@ -1,3 +1,5 @@
+const sum = require('../bad')
+
 test('random test', () => {
-  expect(1).toBe(1);
+  expect(sum.sum(1, 2)).toBe(3);
 })
