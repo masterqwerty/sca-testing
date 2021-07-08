@@ -21,6 +21,12 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/test/"
+    ],
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/test/**",
+      "!**/coverage/**",
+      "!**/node_modules/**"
     ]
   }
 }
