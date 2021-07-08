@@ -1,7 +1,7 @@
 name: CI/CD
 on: [push]
 jobs:
-  Add-Coverage:
+  Run-Unit-Tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -10,4 +10,6 @@ jobs:
           npm install
           npx jest
       - name: Upload Coverage to Codacy
-        run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+        run: |
+          CODACY_PROJECT_TOKEN=${{ secrets.CODACY_PROJECT_TOKEN }}
+          bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
