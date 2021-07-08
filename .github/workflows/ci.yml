@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Unit Tests
-        run: npx jest
+        run: |
+          ls
+          npx jest
       - name: Upload Coverage to Codacy
         run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
