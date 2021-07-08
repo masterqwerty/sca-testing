@@ -1,7 +1,8 @@
 ---
 exclude_paths:
-  - "**/test/**"
-  - "**/coverage/**"
-  - "**/.github/**"
-  - "**/node_modules/**"
+  - "test/**"
+  - "coverage/**"
+  - ".github/**"
+  - "node_modules/**"
   - "test-report.xml"
+  - "server.js"
