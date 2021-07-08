@@ -1,4 +1,4 @@
-name: CI/CD
+name: Testing
 on: [push]
 jobs:
   Run-Unit-Tests:
@@ -11,5 +11,5 @@ jobs:
           npx jest
       - name: Upload Coverage to Codacy
         run: |
-          CODACY_PROJECT_TOKEN=${{ secrets.CODACY_PROJECT_TOKEN }}
+          export CODACY_PROJECT_TOKEN=${{ secrets.CODACY_PROJECT_TOKEN }}
           bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
