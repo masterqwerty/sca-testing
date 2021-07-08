@@ -4,5 +4,8 @@ module.exports = {
   },
   addThing: () => {
     window.addEventListener('popstate', () => {})
+  },
+  myFunc: () => {
+
   }
 }
