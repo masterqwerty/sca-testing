@@ -4,9 +4,10 @@ jobs:
   Add-Coverage:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Run Unit Tests
         run: |
-          ls
+          npm install
           npx jest
       - name: Upload Coverage to Codacy
         run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
