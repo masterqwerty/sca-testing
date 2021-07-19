@@ -1,9 +1,11 @@
 module.exports = {
   plugins: [
-    'security'
+    'security',
+    'scanjs'
   ],
   extends: [
     'standard',
-    'plugin:security/recommended'
+    'plugin:security/recommended',
+    'plugin:scanjs/recommended'
   ]
 }
