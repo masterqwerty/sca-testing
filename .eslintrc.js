@@ -1,3 +1,9 @@
 module.exports = {
-  extends: 'standard'
+  plugins: [
+    'security'
+  ],
+  extends: [
+    'standard',
+    'plugin:security/recommended'
+  ]
 }
