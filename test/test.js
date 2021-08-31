@@ -1,5 +1,4 @@
-const sum = require('../bad')
-const app = require('../index')
+const app = require('../dist')
 const request = require('supertest')
 
 test("Does the app work?", (done) => {
