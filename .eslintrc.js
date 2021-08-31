@@ -5,7 +5,7 @@ module.exports = {
   ],
   extends: [
     'standard',
-    'plugin:security/recommended',
-    'plugin:scanjs/recommended'
+    'plugin:security/all',
+    'plugin:scanjs/all'
   ]
 }
