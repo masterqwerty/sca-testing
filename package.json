@@ -9,24 +9,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "standard": "^16.0.3"
   },
   "devDependencies": {
+    "eslint-plugin-security": "^1.4.0",
     "jest": "^27.0.6",
-    "jest-sonar-reporter": "^2.0.0"
+    "jest-sonar-reporter": "^2.0.0",
+    "supertest": "^6.1.3"
   },
   "jest": {
     "testResultsProcessor": "jest-sonar-reporter",
     "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
-    ],
     "collectCoverageFrom": [
       "**/*.js",
       "!**/test/**",
       "!**/coverage/**",
-      "!**/node_modules/**"
+      "!**/node_modules/**",
+      "!server.js"
     ]
   }
 }

@@ -6,6 +6,5 @@ module.exports = {
     window.addEventListener('popstate', () => {})
   },
   myFunc: () => {
-
   }
 }

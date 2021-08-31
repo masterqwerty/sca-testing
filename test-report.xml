@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/will/sca-testing/test/test.js">
-    <testCase name="random test" duration="2"/>
+    <testCase name="Does the app work?" duration="17"/>
+    <testCase name="random test" duration="14"/>
   </file>
 </testExecutions>
