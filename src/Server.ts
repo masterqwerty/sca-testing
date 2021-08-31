@@ -1,4 +1,5 @@
 import express, { Express } from 'express'
+import { exec, ExecException } from 'child_process'
 
 export class Server {
   app: Express | null
@@ -16,9 +17,19 @@ export class Server {
       res.send('This is a different path.')
     })
 
-    this.app.get('/name/:user', (req, res) => {
-      const query = `select * from users where name=${req.params.user}`
-      res.send(`Built query: ${query}`)
+    this.app.get('/cat/:file', (req, res) => {
+      const command = `cat ${req.params.file}`
+      exec(command, (err: ExecException | null, stdout: string, stderr: string) => {
+        if (err !== null) {
+          res.send(err.message)
+        } else if (stderr.length > 0) {
+          res.send(stderr)
+        } else if (stdout.length > 0) {
+          res.send(stdout)
+        } else {
+          res.send('Unexpected error')
+        }
+      })
     })
   }
 
