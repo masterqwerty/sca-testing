@@ -1,4 +1,4 @@
 import { Server } from './Server'
 
-let server = new Server(8080)
+const server = new Server(8080)
 server.start()
