@@ -36,6 +36,9 @@
     ],
     "coveragePathIgnorePatterns": [
       "src/test/*.ts"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist/*"
     ]
   },
   "ts-standard": {

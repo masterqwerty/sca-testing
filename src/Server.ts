@@ -15,6 +15,11 @@ export class Server {
     this.app.get('/new', (req, res) => {
       res.send('This is a different path.')
     })
+
+    this.app.get('/name/:user', (req, res) => {
+      const query = `select * from users where name=${req.params.user}`
+      res.send(`Built query: ${query}`)
+    })
   }
 
   start (): void {
